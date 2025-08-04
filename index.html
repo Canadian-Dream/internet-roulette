@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internet Roulette</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .casino-cat {
+      width: 300px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    }
+    button {
+      padding: 20px 40px;
+      font-size: 24px;
+      background: #ff007f;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e60073;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Feeling Lucky?</h1>
+  <img src="cat-roulette.png" alt="Casino Cat Playing Roulette" class="casino-cat">
+  <br>
+  <button id="randomBtn">Take Me Somewhere Cool 🔀</button>
+
+  <footer>
+    Made with ✨ by You | Randomness never felt so good
+  </footer>
+
+  <script>
+    document.getElementById("randomBtn").addEventListener("click", function () {
+      const sites = [
+        "https://shrinkme.io/your-sample-link1",
+        "https://shrinkme.io/your-sample-link2",
+        "https://shrinkme.io/your-sample-link3"
+      ];
+      const randomSite = sites[Math.floor(Math.random() * sites.length)];
+      window.open(randomSite, "_blank");
+    });
+  </script>
+</body>
+</html>
